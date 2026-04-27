@@ -1,0 +1,28 @@
+.trabalhos {
+  padding: 6rem 0;
+  background: linear-gradient(180deg, var(--pink-pale), var(--white));
+}
+
+.trabalhos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+@media (max-width: 900px) {
+  .trabalhos {
+    padding: 4rem 0;
+  }
+
+  .trabalhos-grid {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .trabalhos {
+    padding: 3rem 0;
+  }
+}
