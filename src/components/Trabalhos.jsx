@@ -1,12 +1,13 @@
+import { Link } from 'react-router-dom'
 import useReveal from '../hooks/useReveal'
 import { StarIcon } from '../icons/SvgIcons'
 import TrabalhoCard from './TrabalhoCard'
 import './Trabalhos.css'
 
 const trabalhos = [
-  { titulo: "Projetos Acadêmicos", imagem: "/projetos-acad.jpeg", linkTexto: "Ver projetos" },
-  { titulo: "Materiais", imagem: "/materiais.jpeg", linkTexto: "Ver materiais" },
-  { titulo: "Ilustrações", imagem: "/ilustracoes.jpeg", linkTexto: "Ver ilustrações" }
+  { titulo: "Projetos Acadêmicos", imagem: "/projetos-acad.jpeg", linkTexto: "Ver projetos", to: "/projetos-academicos" },
+  { titulo: "Materiais", imagem: "/materiais.jpeg", linkTexto: "Ver materiais", href: "#" },
+  { titulo: "Ilustrações", imagem: "/ilustracoes.jpeg", linkTexto: "Ver ilustrações", href: "#" }
 ]
 
 function Trabalhos() {
@@ -26,7 +27,8 @@ function Trabalhos() {
               titulo={trabalho.titulo}
               imagem={trabalho.imagem}
               linkTexto={trabalho.linkTexto}
-              href="#"
+              href={trabalho.href}
+              to={trabalho.to}
             />
           ))}
         </div>

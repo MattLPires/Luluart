@@ -1,20 +1,19 @@
-import Navbar from './components/Navbar.jsx'
-import Hero from './components/Hero.jsx'
-import SobreMim from './components/SobreMim.jsx'
-import Habilidades from './components/Habilidades.jsx'
-import Trabalhos from './components/Trabalhos.jsx'
-import Footer from './components/Footer.jsx'
+import { Routes, Route } from 'react-router-dom'
+import HomePage from './pages/HomePage.jsx'
+import ProjetosAcademicos from './pages/ProjetosAcademicos.jsx'
+import ProjetoDetalhe from './pages/ProjetoDetalhe.jsx'
+import Materiais from './pages/Materiais.jsx'
+import Ilustracoes from './pages/Ilustracoes.jsx'
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <Hero />
-      <SobreMim />
-      <Habilidades />
-      <Trabalhos />
-      <Footer />
-    </>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/projetos-academicos" element={<ProjetosAcademicos />} />
+      <Route path="/projetos-academicos/:slug" element={<ProjetoDetalhe />} />
+      <Route path="/materiais" element={<Materiais />} />
+      <Route path="/ilustracoes" element={<Ilustracoes />} />
+    </Routes>
   )
 }
 

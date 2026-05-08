@@ -127,7 +127,7 @@
 }
 
 .hero-logo-img {
-  max-width: clamp(340px, 60vw, 680px);
+  max-width: clamp(580px, 92vw, 1300px);
   height: auto;
   margin-bottom: 1.5rem;
   filter: drop-shadow(0 8px 32px rgba(217, 127, 191, 0.25));
@@ -206,7 +206,9 @@
   }
 
   .hero-logo-img {
-    max-width: 85vw;
+    max-width: none;
+    width: 130vw;
+    margin-left: -15vw;
   }
 
   .hero-subtitle-row {

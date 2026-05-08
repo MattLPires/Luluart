@@ -1,0 +1,16 @@
+.navbar.navbar-pages {
+  background: rgba(252, 232, 245, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.navbar.navbar-pages .nav-active {
+  font-size: 0.95rem;
+}
+
+@media (max-width: 600px) {
+  .navbar.navbar-pages .nav-active {
+    padding: 0.4rem 1rem;
+    font-size: 0.75rem;
+  }
+}
