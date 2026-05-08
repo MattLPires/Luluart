@@ -6,8 +6,8 @@ import './Trabalhos.css'
 
 const trabalhos = [
   { titulo: "Projetos Acadêmicos", imagem: "/projetos-acad.jpeg", linkTexto: "Ver projetos", to: "/projetos-academicos" },
-  { titulo: "Materiais", imagem: "/materiais.jpeg", linkTexto: "Ver materiais", href: "#" },
-  { titulo: "Ilustrações", imagem: "/ilustracoes.jpeg", linkTexto: "Ver ilustrações", href: "#" }
+  { titulo: "Materiais", imagem: "/materiais.jpeg", linkTexto: "Ver materiais", href: "/materiais" },
+  { titulo: "Ilustrações", imagem: "/ilustracoes.jpeg", linkTexto: "Ver ilustrações", href: "/ilustracoes" }
 ]
 
 function Trabalhos() {
