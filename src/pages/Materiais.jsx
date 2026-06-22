@@ -15,10 +15,15 @@ const todasImagens = [
   { src: "/materiais/cartoes/vermelhoverso.jpg", categoria: "Cartões" },
   { src: "/materiais/logos/iconblack.jpg", categoria: "Logos" },
   { src: "/materiais/logos/iconpurple.jpg", categoria: "Logos" },
-  { src: "/materiais/logos/iconred.jpg", categoria: "Logos" }
+  { src: "/materiais/logos/iconred.jpg", categoria: "Logos" },
+  { src: "/materiais/discovel/1.jpg", categoria: "E-mail" },
+  { src: "/materiais/discovel/2.jpg", categoria: "E-mail" },
+  { src: "/materiais/discovel/3.jpg", categoria: "E-mail" },
+  { src: "/materiais/discovel/4.jpeg", categoria: "E-mail" },
+  { src: "/materiais/discovel/5.jpeg", categoria: "Posters" }
 ]
 
-const categorias = ["Todos", "Stories", "Posters", "Cartões", "Logos"]
+const categorias = ["Todos", "Stories", "Posters", "Cartões", "Logos", "E-mail"]
 
 function Materiais() {
   const [filtro, setFiltro] = useState("Todos")
